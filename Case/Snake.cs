@@ -9,6 +9,10 @@ namespace Case
     {
         public string ToPascal(string orig)
         {
+            if (orig == null)
+            {
+                return "";
+            }
             var words = GetWords(orig);
             var result = "";
             TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
