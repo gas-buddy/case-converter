@@ -9,7 +9,7 @@ namespace Case
     {
         public string ToPascal(string orig)
         {
-            if (orig == null)
+            if (string.IsNullOrEmpty(orig))
             {
                 return "";
             }
@@ -21,7 +21,7 @@ namespace Case
             }
             return result;
         }
-        public Array GetWords(string orig)
+        public Array GetWords(string orig)  
         {
             return orig.Split('_');
         }
