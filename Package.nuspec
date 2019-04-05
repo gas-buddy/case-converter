@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Package</id>
+    <version>$version$</version>
+    <authors>GasBuddy</authors>
+    <owners>GasBuddy</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Converts between casing conventions</description>
+    <copyright>Copyright 2019</copyright>
+    <tags>Case</tags>
+  </metadata>
+</package>
