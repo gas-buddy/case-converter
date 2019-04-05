@@ -10,13 +10,8 @@ namespace Case
     {
         public static string ToPascal(string orig)
         {
-            if (Snake.IsSnakeCase(orig))
-            {
-                var snake = new Snake();
-                return snake.ToPascal(orig);
-            }
-
-            return orig;
+            var snake = new Snake();
+            return snake.ToPascal(orig);
         }
     }
 }

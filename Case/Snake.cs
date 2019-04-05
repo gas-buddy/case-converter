@@ -21,14 +21,5 @@ namespace Case
         {
             return orig.Split('_');
         }
-        
-        public static bool IsSnakeCase(string orig)
-        {
-            if (orig.IndexOf('_') >= 0)
-            {
-                return true;
-            }
-            return false;
-        }
     }
 }

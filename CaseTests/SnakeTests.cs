@@ -6,25 +6,16 @@ namespace CaseTests
     [TestFixture]
     public class SnakeTests
     {
-        [TestCase("asdf_sf", true)]
-        [TestCase("asdf_sf_sdf", true)]
-        [TestCase("asdfsf_", true)]
-        [TestCase("_asdfsf", true)]
-        public void SnakeCaseDetection(string input, bool expected)
-        {
-            var result = Case.Snake.IsSnakeCase(input);
-            Assert.AreEqual(expected, result);
-        }
-
         [TestCase("this_is_snake_case", "ThisIsSnakeCase")]
         [TestCase("thisislikeonewordinsnakecase", "Thisislikeonewordinsnakecase")]
         [TestCase("PascalCase", "Pascalcase")]
         [TestCase("_weird_case_", "WeirdCase")]
-        public void SnakeConversion(string input, string expected)
+        [TestCase("Garbag%$#432String_Li23So+_bad", "Garbag%$#432StringLi23so+Bad")]
+        public void ToPascal(string input, string expected)
         {
-            var snake = new Case.Snake();
-            var result = snake.ToPascal(input);
+            var result = Case.Converter.ToPascal(input);
             Assert.AreEqual(expected, result);
         }
+
     }
 }
