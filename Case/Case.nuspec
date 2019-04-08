@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Package</id>
+    <id>Case</id>
     <version>$version$</version>
     <authors>GasBuddy</authors>
     <owners>GasBuddy</owners>
